@@ -34,9 +34,7 @@ class AddressBook
 
   def import_from_csv(file_name)
     csv_text = File.read(file_name)
-    puts csv_text
     csv = CSV.parse(csv_text, headers: true, skip_blanks: true)
-    puts csv
 
     csv.each do |row|
       row_hash = row.to_hash
