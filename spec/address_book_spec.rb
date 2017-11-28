@@ -234,7 +234,7 @@ RSpec.describe AddressBook do
   end
 
   describe "#delete_all_entries" do
-    it "removes all entries from the address book" do
+    it "deletes all entries from the address book" do
       book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
       book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
       book.add_entry('Ada Lovelace', '010.012.1815', 'augusta.king@lovelace.com')
